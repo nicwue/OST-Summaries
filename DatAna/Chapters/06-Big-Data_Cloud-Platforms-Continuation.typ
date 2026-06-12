@@ -1,7 +1,5 @@
 #import "../../template.typ": *
 
-= Big Data & Cloud Platforms -- Continuation
-
 == Cloud vs. On-Premise
 
 *On-premise* means hardware and systems are operated by the organisation itself. The organisation has more control, but also more maintenance and update work.
@@ -10,21 +8,16 @@
 
 == XaaS: IaaS, PaaS, SaaS
 
-The slides show different levels of responsibility:
-
 - *IaaS:* infrastructure as a service.
 - *PaaS:* platform as a service.
 - *SaaS:* software as a service.
 
 == Hybrid-First / Workload-First
 
-The slides argue that the question is no longer simply “cloud-first”. Instead, organisations should ask:
-
+The slides argue that the question is no longer simply “cloud-first”. Instead, organisations should ask:\
 Which workload belongs where, for cost, performance and legal reasons?
 
 == Requirements for Cloud Platforms
-
-A good cloud analytics platform should offer:
 
 - fast setup
 - secure access
@@ -53,11 +46,9 @@ A *Data Warehouse* usually stores structured, prepared and cleaned data for anal
 
 A *Data Lake* stores raw or less structured data in different formats. It is more flexible, but requires good metadata and governance.
 
-The slides also mention *Data Lakehouses*, which combine ideas from Data Warehouses and Data Lakes.
+*Data Lakehouses* combine ideas from Data Warehouses and Data Lakes.
 
 == Cloud Analytics Services
-
-Examples discussed include:
 
 - *Amazon Redshift*
 - *Snowflake*
@@ -70,7 +61,6 @@ Examples discussed include:
 Snowflake separates storage and compute. Users can run virtual warehouses independently on shared data.
 
 Advantages include:
-
 - elasticity
 - simple SaaS setup
 - support for JSON data
@@ -79,8 +69,7 @@ Advantages include:
 
 == Data Lakes and Lakehouse Formats
 
-The slides mention open table formats:
-
+Open table formats:
 - *Apache Iceberg*
 - *Delta Lake*
 - *Apache Hudi*

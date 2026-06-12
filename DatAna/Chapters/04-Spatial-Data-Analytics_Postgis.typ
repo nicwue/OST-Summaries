@@ -1,18 +1,12 @@
 #import "../../template.typ": *
 
-= Spatial Data Analytics -- Continuation / PostGIS
-
 == Geo Data Types
-
-The slides distinguish three main geodata types:
 
 - *Vector data:* points, lines and polygons.
 - *Raster data:* pixels or grid cells, for example GeoTIFF.
 - *Topology data:* relationships between nodes and edges, for example networks.
 
 == Geometry Types
-
-Important geometry types are:
 
 - *POINT:* one coordinate.
 - *LINESTRING:* ordered sequence of points forming a line.
@@ -21,8 +15,6 @@ Important geometry types are:
 - *GEOMETRYCOLLECTION:* mixed geometry collection.
 
 == OpenStreetMap Data Model
-
-OpenStreetMap uses a special data model:
 
 - *Nodes:* points with coordinates.
 - *Ways:* ordered lists of nodes, used for lines or closed areas.
@@ -49,15 +41,12 @@ Spatial indexes make spatial queries faster. PostGIS often uses a *GIST index*, 
 Spatial analysis is not only about location, but also about relationships between objects.
 
 Important relationships include:
-
 - *distance:* how far apart objects are.
 - *adjacency:* whether objects touch or border each other.
 - *containment:* whether one object lies inside another.
 - *intersection:* whether objects overlap.
 
-== Spatial Functions
-
-Typical PostGIS functions include:
+== PostGIS Spatial Functions
 
 - `ST_AsText()`
 - `ST_GeomFromText()`
@@ -71,8 +60,6 @@ Typical PostGIS functions include:
 
 == Spatial Analysis Examples
 
-The slides mention several spatial analysis operations:
-
 - *Point-in-polygon:* checks which points lie inside an area.
 - *Buffer:* creates a zone around a point, line or polygon.
 - *Overlay / Intersect:* combines layers and finds overlaps.
@@ -80,8 +67,6 @@ The slides mention several spatial analysis operations:
 - *Measurement:* lengths, distances and areas.
 
 == Geo Standards
-
-Important geodata standards and formats include:
 
 - *GeoJSON*
 - *GeoPackage*

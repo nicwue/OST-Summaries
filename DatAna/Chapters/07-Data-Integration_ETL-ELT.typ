@@ -7,7 +7,6 @@
 Data integration means combining data from different, heterogeneous sources into one structured information set.
 
 It includes:
-
 - data import
 - conversion
 - validation
@@ -33,8 +32,6 @@ For *Machine Learning*, the goal is often exploration, model training and featur
 
 == Important Functions
 
-Important data integration functions are:
-
 - *Data cleaning:* remove duplicates, invalid values or missing values.
 - *Data transformation:* change structure or data types.
 - *Data aggregation:* summarise data from several sources.
@@ -46,14 +43,10 @@ Important data integration functions are:
 
 == Integration Approaches
 
-Two approaches are mentioned:
-
 - *Top-down:* a target schema is given first, and source data is mapped to it.
 - *Bottom-up:* existing source schemas are analysed first, and an integrated target schema is built from them.
 
 == Integration Conflicts
-
-The slides classify conflicts such as:
 
 - *Semantic conflicts:* different meanings or object concepts.
 - *Description conflicts:* different attributes, names, datatypes or units.
@@ -65,13 +58,11 @@ The slides classify conflicts such as:
 
 In a *Data Warehouse*, data is physically copied and integrated into one system.
 
-Advantages:
-
+*Advantages:*
 - queries do not disturb source systems
 - complex calculations or cleaning are possible
 
-Disadvantages:
-
+*Disadvantages:*
 - designing the warehouse is time-consuming
 - data may not always be fully current
 
@@ -79,15 +70,11 @@ In *virtual data integration*, data remains in the sources and is fetched when n
 
 == ETL
 
-ETL means:
-
 - *Extract:* select and provide data from source systems.
 - *Transform:* clean and adapt data to schema and quality requirements.
 - *Load:* load the data into the Data Warehouse.
 
 == ELT
-
-ELT means:
 
 - *Extract:* get data from sources.
 - *Load:* load it into a database or staging area.

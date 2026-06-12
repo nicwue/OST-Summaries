@@ -1,13 +1,8 @@
 #import "../../template.typ": *
 
-= Data Integration -- Continuation
-
 == Tools for Data Integration
 
-The slides group tools into several categories.
-
 *Data preparation tools:*
-
 - text editors
 - csvkit
 - DuckDB
@@ -16,19 +11,16 @@ The slides group tools into several categories.
 - Open Data Editor
 
 *Workflow orchestration tools:*
-
 - Apache Airflow
 - Apache NiFi
 
 *Transformation tools:*
-
 - IBM DataStage
 - OpenRefine
 - dbt
 - Looker Studio
 
 *Hybrid tools:*
-
 - KNIME
 - Microsoft SSIS
 - Apache Hop
@@ -37,8 +29,7 @@ The slides group tools into several categories.
 
 == Tool Selection
 
-When choosing a tool, the slides recommend considering:
-
+Consider:
 - tool category
 - existing company ecosystem
 - available know-how
@@ -57,16 +48,12 @@ For geodata, tools like FME, Apache Hop, KNIME and Looker Studio may be relevant
 
 == Data Errors
 
-The slides distinguish:
-
 - *Simple errors:* visible from one row, for example wrong format.
 - *Difficult errors:* only visible when comparing several rows.
 - *Systematic errors:* occur regularly and can often be corrected more easily.
 - *Unsystematic errors:* irregular and harder to detect.
 
 == Data Cleaning Techniques
-
-Important techniques include:
 
 - format conversion
 - normalisation
@@ -79,9 +66,7 @@ Important techniques include:
 
 == DuckDB and DBeaver
 
-DuckDB is useful for data cleaning and preparation because it can read and write many formats, including CSV, Parquet, PostgreSQL, MySQL, SQLite, HTTP, S3 and GitHub.
-
-It supports modern SQL, CTEs and window functions.
+DuckDB is useful for data cleaning and preparation because it can read and write many formats, including CSV, Parquet, PostgreSQL, MySQL, SQLite, HTTP, S3 and GitHub. It supports modern SQL, CTEs and window functions.
 
 == Duplicate Detection
 
@@ -90,8 +75,6 @@ Duplicate detection identifies different rows that represent the same real-world
 == String Matching
 
 When data contains typing errors or variations, exact matching is not enough. Similarity measures are needed.
-
-The slides mention:
 
 - *Levenshtein distance:* measures edit distance.
 - *Smith-Waterman:* finds similar substrings.
@@ -107,7 +90,6 @@ The two main challenges are accuracy and scalability.
 Data matching searches for structured data elements that refer to the same real entity. It is more complex than string matching because it compares whole records, not only strings.
 
 Techniques include:
-
 - rule-based matching
 - learning-based matching
 - clustering
@@ -118,13 +100,11 @@ Techniques include:
 Data enrichment means adding external data to existing data through common linking attributes.
 
 Examples of linking attributes are:
-
 - place names
 - birth dates
 - coordinates
 
 Open data is important here:
-
 - *Open Government Data:* official public data.
 - *Open Public Data:* volunteered or crowdsourced data, such as Wikipedia, Wikidata, Flickr and OpenStreetMap.
 - *Open Corporate Data:* open company data, for example Google Earth Engine.

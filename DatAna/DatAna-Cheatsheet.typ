@@ -5,6 +5,7 @@
   fach: "DatAna",
   fach-long: "Data Analytics",
   semester: "FS26",
+  landscape: true,
   language: "en",
   font-size: 6pt,
   column-count: 5,
